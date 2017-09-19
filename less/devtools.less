@@ -17,8 +17,14 @@
 }
 
 .devtools {
+  color: #000;
+
+  .icon {
+    color: #000 !important;
+  }
 
 	.devtools-button-container {
+    color: #000;
 		overflow: hidden;
 	}
 
@@ -46,13 +52,13 @@
 		}
 
 		span {
-			background:@drawer-color;
+			background:#fff;
 			margin:0;
 			padding:0 10px;
 		}
 	}
 
-	.drawer-item {
+	.drawer-item, .draw-item-open {
 
 		margin:5px auto;
 
@@ -88,7 +94,7 @@
 						&:before {
 		                    content: " ";
 		                }
-		                border: 3px solid #fff;
+		                border: 3px solid #000;
 		                width:18px;
 		                height:18px;
 		                font-size:18px;
@@ -100,7 +106,6 @@
 				&.selected {
 
 					.toggle-state .checkbox {
-						color:#fff;
 
 						&:before {
 	                        content: "\e633";
